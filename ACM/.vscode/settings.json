@@ -1,0 +1,29 @@
+{
+  "editor.tabSize": 2,
+  "editor.suggestSelection": "first",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "editor.fontFamily": "'D2Coding', Consolas",
+  "files.exclude": {
+    ".git/": true,
+    "node_modules/": true
+  },
+  "search.exclude": {
+    ".git/": true
+  },
+  "code-runner.executorMap": {
+    "c": "clear && cd $dir && gcc $fileName -o test.exe && cat .vscode/input | ./test.exe > .vscode/output && echo ----done---- && rm ./test.exe",
+    "cpp": "clear && cd $dir && g++ $fileName -o test.exe && cat .vscode/input | ./test.exe > .vscode/output && echo ----done---- && rm ./test.exe"
+  },
+  "code-runner.executorMapByGlob": {},
+  "code-runner.executorMapByFileExtension": {},
+  "code-runner.runInTerminal": true,
+  "code-runner.customCommand": "clear && cd $dir && g++ $fileName -o test.exe && cat .vscode/input | ./test.exe > .vscode/output && echo ----done---- && rm ./test.exe",
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.showExecutionMessage": false,
+  "code-runner.preserveFocus": true,
+  //"terminal.explorerKind": "integrated",
+  "breadcrumbs.enabled": true,
+  "editor.fontSize": 16
+}
