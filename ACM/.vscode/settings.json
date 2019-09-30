@@ -13,8 +13,8 @@
     ".git/": true
   },
   "code-runner.executorMap": {
-    "c": "clear && cd $dir && gcc $fileName -o test.exe && cat .vscode/input | ./test.exe > .vscode/output && echo ----done---- && rm ./test.exe",
-    "cpp": "clear && cd $dir && g++ $fileName -o test.exe && cat .vscode/input | ./test.exe > .vscode/output && echo ----done---- && rm ./test.exe"
+    "c": "clear && cd $dir && gcc $fileName -o $fileNameWithoutExt && cat .vscode/input | ./$fileNameWithoutExt > .vscode/output && echo ----done---- && rm ./$fileNameWithoutExt",
+    "cpp": "clear && cd $dir && g++ $fileName -o $fileNameWithoutExt && cat .vscode/input | ./$fileNameWithoutExt > .vscode/output && echo ----done---- && rm ./$fileNameWithoutExt"
   },
   "code-runner.executorMapByGlob": {},
   "code-runner.executorMapByFileExtension": {},
@@ -25,5 +25,9 @@
   "code-runner.preserveFocus": true,
   //"terminal.explorerKind": "integrated",
   "breadcrumbs.enabled": true,
-  "editor.fontSize": 16
+  "editor.fontSize": 16,
+  "files.associations": {
+    "queue": "cpp",
+    "utility": "cpp"
+  }
 }
